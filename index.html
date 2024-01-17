@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/simongameicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <h1>Simon Game</h1>
+        <div class="circle">
+            <div class="container">
+            <button class="btn green" disabled></button>
+            <button class="btn red" disabled></button>
+            <button class="btn yellow" disabled></button>
+            <button class="btn blue" disabled></button>
+            </div>
+            <hr class="vertical">
+            <hr class="horizontal">
+            <div class="circle">
+                <h2>Simon</h2>
+                <img class="play-img" src="img/boton-de-play.png" alt="play-button"> 
+                <div class="small-box">
+                <img class="restart" src="img/refresh.png" alt="refresh buton">
+                </div>
+            </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

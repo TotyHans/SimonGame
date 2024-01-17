@@ -1,0 +1,138 @@
+*{margin: 0; padding: 0;}
+.background{
+    /*background-image: url(img/background.jpg);
+    height: 100vh;
+    background-size: cover;*/
+    background-color: rgba(8, 2, 1, 0.751);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    width: 35rem;
+    display: flex;
+    height: 35rem;
+    border-radius: 50%;
+    background-color: #6B240C;
+    box-shadow: -1px 20px 19px 20px rgba(0, 0, 0, 0.2);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+}
+.container{
+    display: grid;
+    grid-template-columns: 280px 280px;
+    grid-template-rows: 280px 280px;
+}
+.circle > .circle{
+    display: flex;
+    width: 15rem;
+    background-color: rgb(140, 140, 140);
+    height: 15rem;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.vertical{
+    width: 600px;
+    height: 50px;
+    background-color: rgb(122, 122, 122);
+    border-color: rgb(151, 151, 151);
+    transform: rotate(90deg);
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+}
+.horizontal{
+    width: 600px;
+    height: 50px;
+    background-color: rgb(143, 143, 143);
+    border-color: rgb(136, 136, 136);
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+}
+.small-box{
+    display: none;
+    text-align: center;
+    width: 50px;
+    height: 57px;
+    background-color: white;
+    border-radius: 50%;
+    justify-content: center;
+}
+.green{
+     background: rgb(22,255,0);
+     background: radial-gradient(circle, rgba(22,255,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+.green:hover{
+    background: radial-gradient(circle, rgba(22,255,0,1) 0%, rgba(0,0,0,1) 400%);
+    cursor: pointer;
+}
+.red{
+    background: rgb(255, 0, 0);
+    background: radial-gradient(circle, rgb(255, 0, 0) 0%, rgba(0,0,0,1) 100%);
+}
+.red:hover{
+    background: radial-gradient(circle, rgb(255, 0, 0) 0%, rgba(0,0,0,1) 400%);
+    cursor: pointer;
+}
+.yellow{
+    background: rgb(255, 255, 0);
+    background: radial-gradient(circle, rgb(255, 255, 0) 0%, rgba(0,0,0,1) 100%);
+}
+.yellow:hover{
+    background: radial-gradient(circle, rgb(255, 255, 0) 0%, rgba(0,0,0,1) 400%);
+    cursor: pointer;
+}
+.blue{
+    background: rgb(0, 30, 255);
+    background: radial-gradient(circle, rgb(0, 30, 255) 0%, rgba(0,0,0,1) 100%);
+}
+.blue:hover{
+    background: radial-gradient(circle, rgb(0, 30, 255) 0%, rgba(0,0,0,1) 400%);
+    cursor: pointer;
+}
+.green-blink{
+    background: radial-gradient(circle, rgba(22,255,0,1) 0%, rgba(0,0,0,1) 400%);
+}
+.blue-blink{
+    background: radial-gradient(circle, rgb(0, 30, 255) 0%, rgba(0,0,0,1) 400%);
+}
+.yellow-blink{
+    background: radial-gradient(circle, rgb(255, 255, 0) 0%, rgba(0,0,0,1) 400%);
+}
+.red-blink{
+    background: radial-gradient(circle, rgb(255, 0, 0) 0%, rgba(0,0,0,1) 400%);
+}
+h1{
+    position: relative;
+    font-family: 'Genos', sans-serif;
+    margin-top: 30px;
+    color: white;
+    font-size: 3rem;
+    z-index: 3;
+    align-self: start;
+}
+h2{
+    position: relative;
+    font-family: 'Genos', sans-serif;
+    margin-top: 30px;
+    color: white;
+    font-size: 3rem;
+    z-index: 3;
+}
+.play-img{
+    height: 60px;
+    cursor: pointer;
+}
+.restart{
+    height: 60px;
+    cursor: pointer;
+}
